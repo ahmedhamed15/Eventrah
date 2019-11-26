@@ -1,4 +1,4 @@
-.my-transition, .main-button, .header .header-overlay .about-eventrah .eventrah-brief .eventrah-info .join-to-us, .navbar, .navbar .navbar-nav .nav-item a, .header .header-overlay .enventrah-video .video-modal {
+.my-transition, .main-button, .header .header-overlay .about-eventrah .eventrah-brief .eventrah-info .join-to-us, .services .offer-service a, .navbar, .navbar .navbar-nav .nav-item a, .header .header-overlay .enventrah-video .video-modal {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out; }
 
@@ -25,7 +25,7 @@
     width: 30px;
     background-color: #be9b00; }
 
-.main-button, .header .header-overlay .about-eventrah .eventrah-brief .eventrah-info .join-to-us {
+.main-button, .header .header-overlay .about-eventrah .eventrah-brief .eventrah-info .join-to-us, .services .offer-service a {
   font-size: 18px;
   font-weight: bold;
   padding: 5px 40px;
@@ -34,7 +34,7 @@
   background-image: -webkit-gradient(linear, left top, right bottom, from(#e8c31c), to(#f7efcc));
   background-image: linear-gradient(to bottom right, #e8c31c, #f7efcc);
   color: #3a3a3a; }
-  .main-button:hover, .header .header-overlay .about-eventrah .eventrah-brief .eventrah-info .join-to-us:hover {
+  .main-button:hover, .header .header-overlay .about-eventrah .eventrah-brief .eventrah-info .join-to-us:hover, .services .offer-service a:hover {
     background-image: -webkit-gradient(linear, left top, right bottom, from(#f7efcc), to(#e8c31c));
     background-image: linear-gradient(to bottom right, #f7efcc, #e8c31c); }
 
@@ -420,6 +420,129 @@
     @media (max-width: 991px) {
       .services .timeline .right-bottom {
         left: 45%; } }
+  .services .offer-service {
+    margin-top: 30px; }
+    @media (max-width: 991px) {
+      .services .offer-service {
+        margin-top: 10px;
+        text-align: center !important; } }
+
+.our-numbers {
+  background: url("../images/our-numbers.jpg") no-repeat center center fixed;
+  background-size: cover; }
+  .our-numbers .our-numbers-overlay {
+    padding: 100px 0;
+    background-color: rgba(255, 255, 255, 0.7); }
+    @media (max-width: 991px) {
+      .our-numbers .our-numbers-overlay {
+        padding: 40px 0; } }
+    .our-numbers .our-numbers-overlay .fact h1 {
+      color: #e8c31c;
+      position: relative;
+      display: inline-block;
+      font-weight: bold;
+      font-size: 4rem; }
+      .our-numbers .our-numbers-overlay .fact h1:before {
+        content: "+";
+        color: #e8c31c;
+        font-weight: bold;
+        font-size: 3rem;
+        position: absolute;
+        top: -15px;
+        right: -28px; }
+        @media (max-width: 991px) {
+          .our-numbers .our-numbers-overlay .fact h1:before {
+            font-size: 2rem;
+            top: -11px;
+            right: -18px; } }
+      @media (max-width: 991px) {
+        .our-numbers .our-numbers-overlay .fact h1 {
+          font-size: 3rem; } }
+    .our-numbers .our-numbers-overlay .fact p {
+      font-weight: bold;
+      font-size: 1.5rem;
+      color: #444; }
+    @media (max-width: 991px) {
+      .our-numbers .our-numbers-overlay .fact {
+        margin-bottom: 50px; } }
+    @media (max-width: 991px) {
+      .our-numbers .our-numbers-overlay .col-12:last-child .fact {
+        margin-bottom: 0; } }
+
+.gallary {
+  padding: 70px 0; }
+  .gallary .gallary-item {
+    height: 100%; }
+    .gallary .gallary-item a:first-child {
+      display: block;
+      height: 100%; }
+  .gallary .full {
+    min-height: 634px; }
+    @media (max-width: 991px) {
+      .gallary .full {
+        min-height: 301px; } }
+    .gallary .full > div:last-child {
+      min-height: 634px; }
+      @media (max-width: 991px) {
+        .gallary .full > div:last-child {
+          min-height: 301px; } }
+  .gallary .half {
+    min-height: 301px;
+    margin-bottom: 30px; }
+    .gallary .half > div:last-child {
+      min-height: 301px; }
+      @media (max-width: 991px) {
+        .gallary .half > div:last-child {
+          min-height: 301px; } }
+  .gallary .half2 {
+    min-height: 301px; }
+    .gallary .half2 > div:last-child {
+      min-height: 301px; }
+      @media (max-width: 991px) {
+        .gallary .half2 > div:last-child {
+          min-height: 301px; } }
+  .gallary .full, .gallary .half, .gallary .half2 {
+    background-size: cover;
+    position: relative;
+    box-shadow: 10px 10px 10px #DDD; }
+    .gallary .full > div:last-child, .gallary .half > div:last-child, .gallary .half2 > div:last-child {
+      display: -webkit-box;
+      display: flex;
+      -webkit-box-align: end;
+              align-items: flex-end;
+      background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), to(black));
+      background-image: linear-gradient(transparent, black); }
+  .gallary .full:hover .overlay-effect, .gallary .half:hover .overlay-effect, .gallary .half2:hover .overlay-effect {
+    opacity: 1;
+    cursor: pointer; }
+  .gallary .overlay-effect {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    -webkit-transition: .5s ease;
+    transition: .5s ease;
+    background-color: rgba(232, 195, 28, 0.7);
+    overflow: hidden; }
+  .gallary .full a,
+  .gallary .half a,
+  .gallary .half2 a {
+    color: #fff;
+    text-shadow: 3px 3px 3px #000; }
+  .gallary .full h3,
+  .gallary .half h3,
+  .gallary .half2 h3 {
+    padding: 15px 30px; }
+  @media screen and (max-width: 768px) {
+    .gallary .full, .gallary .half, .gallary .half2 {
+      margin-bottom: 10px; } }
+
+.our-clients {
+  padding: 70px 0; }
+  .our-clients .client-slider .slider-item a img {
+    max-width: 200px; }
 
 footer {
   background-color: #000;
@@ -485,7 +608,8 @@ footer {
 body {
   overflow-x: hidden;
   direction: rtl;
-  text-align: right; }
+  text-align: right;
+  height: 8000px; }
   @media (max-width: 991px) {
     body {
       overflow-x: hidden; } }

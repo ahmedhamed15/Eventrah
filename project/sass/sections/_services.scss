@@ -143,4 +143,14 @@
       }
     } 
   }
+  .offer-service {
+    margin-top: 30px;
+    @media #{$maxSmall} {
+      margin-top: 10px;
+      text-align: center !important;
+    }
+    a {
+      @extend .main-button;
+    }
+  }
 }

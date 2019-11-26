@@ -8,6 +8,9 @@
 @import "sections/header";
 @import "sections/next_event";
 @import "sections/services";
+@import "sections/our_numbers";
+@import "sections/gallary";
+@import "sections/clients";
 @import "layouts/footer";
 
 
@@ -16,6 +19,7 @@ body {
     overflow-x: hidden;
     direction: rtl;
     text-align: right;
+    height: 8000px;
     @media #{$maxSmall} {
         overflow-x: hidden;
     }

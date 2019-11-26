@@ -1,0 +1,64 @@
+.our-numbers {
+    background: url('../images/our-numbers.jpg') no-repeat center center fixed;
+    background-size: cover;
+    .our-numbers-overlay {
+        padding: 100px 0;
+        background-color: rgba(255, 255, 255, 0.7);
+        @media #{$maxSmall} {
+            padding: 40px 0;
+        }
+        .fact {
+            h1 {
+                color: $mainColor;
+                position: relative;
+                display: inline-block;
+                font: {
+                    weight: bold;
+                    size: 4rem
+                }
+                &:before {
+                    content: "+";
+                    color: $mainColor;
+                    font: {
+                        weight: bold;
+                        size: 3rem;
+                    }
+                    position: absolute;
+                    top: -15px;
+                    right: -28px;
+                    @media #{$maxSmall} {
+                        font: {
+                            size: 2rem
+                        }
+                        top: -11px;
+                        right: -18px;
+                    }
+                }
+                @media #{$maxSmall} {
+                    font: {
+                        size: 3rem
+                    }
+                }
+            }
+            p {
+                font: {
+                    weight: bold;
+                    size: 1.5rem
+                }
+                color: #444
+            }
+            @media #{$maxSmall} {
+                margin-bottom: 50px;
+            }
+        }
+        .col-12 {
+            &:last-child {
+                .fact {
+                    @media #{$maxSmall} {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+}
