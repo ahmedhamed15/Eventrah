@@ -1,0 +1,90 @@
+.navbar {
+    background: none !important;
+    border-radius: 0;
+    @extend .my-transition;
+    @media #{$maxSmall} {
+        background-color: #f8f9fa !important
+    }
+    &.fixed-background {
+        background-color: rgb(33, 33, 33) !important;
+    }
+    .navbar-brand {
+        img {
+            width: 200px
+        }
+    }
+    .navbar-nav {
+        @media #{$maxSmall} {
+            padding-right: 0;
+        }
+        .nav-item {
+            padding: 15px 22px;
+            &.nav-item.active {
+                > a {
+                    color: $mainColor !important;
+                    border-bottom: 3px solid $mainColor !important;
+                }
+            }
+            a {
+                color: $lightColor;
+                padding: 0 !important;
+                border-bottom: 3px solid transparent;
+                font-size: 18px !important;
+                padding-bottom: 10px !important;
+                @extend .my-transition;
+                @media #{$maxSmall} {
+                    color: $darkColor !important
+                }
+                &:hover {
+                    color: $mainColor !important;
+                    border-bottom: 3px solid $mainColor !important;
+                }
+            }
+        }
+        .dropdown-toggle {
+            &:after {
+                margin: 0 0.55rem 0 0;
+            }
+        }
+        .show {
+            > .nav-link {
+                color: $mainColor;
+            }
+        } 
+        .dropdown-menu {
+            text-align: right !important;
+            border: 2px solid $mainColor;
+            min-width: 160px;
+            &:after {
+                content: "";
+                display: block;
+                border-left: 15px solid transparent;
+                border-right: 15px solid transparent;
+                border-bottom: 15px solid $mainColor;
+                position: absolute;
+                top: -17px;
+                left: calc(50% - 15px);
+                @media #{$maxSmall} {
+                    display: none;
+                }
+            }
+            @media #{$minMidium} {
+                top: 110%;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+            a {
+                color: $mainColor;
+                color: #272727;
+                font-size: 15px !important;
+                padding: 5px 10px !important;
+                &:hover {
+                    border: none;
+                    background-color: $mainColor;
+                    color: $lightColor !important;
+                    padding-right: 20px !important;
+                }
+            }
+        }
+    }
+}

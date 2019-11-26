@@ -1,0 +1,499 @@
+.my-transition, .main-button, .header .header-overlay .about-eventrah .eventrah-brief .eventrah-info .join-to-us, .navbar, .navbar .navbar-nav .nav-item a, .header .header-overlay .enventrah-video .video-modal {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out; }
+
+.main-title {
+  position: relative;
+  font-weight: 600;
+  margin-bottom: 50px; }
+  @media (max-width: 991px) {
+    .main-title {
+      margin-bottom: 35px; } }
+  .main-title:after, .main-title:before {
+    content: "";
+    position: absolute; }
+  .main-title:after {
+    bottom: 0;
+    right: 0;
+    height: 3px;
+    width: 50px;
+    background-color: #e8c31c; }
+  .main-title:before {
+    bottom: -3px;
+    right: 0;
+    height: 3px;
+    width: 30px;
+    background-color: #be9b00; }
+
+.main-button, .header .header-overlay .about-eventrah .eventrah-brief .eventrah-info .join-to-us {
+  font-size: 18px;
+  font-weight: bold;
+  padding: 5px 40px;
+  border-radius: 20px;
+  margin-top: 20px;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#e8c31c), to(#f7efcc));
+  background-image: linear-gradient(to bottom right, #e8c31c, #f7efcc);
+  color: #3a3a3a; }
+  .main-button:hover, .header .header-overlay .about-eventrah .eventrah-brief .eventrah-info .join-to-us:hover {
+    background-image: -webkit-gradient(linear, left top, right bottom, from(#f7efcc), to(#e8c31c));
+    background-image: linear-gradient(to bottom right, #f7efcc, #e8c31c); }
+
+.scroll-top-button {
+  position: fixed;
+  bottom: 20px;
+  right: -200px;
+  z-index: 888;
+  text-align: center;
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  color: #FFF;
+  background-color: #e8c31c;
+  border: 1px solid transparent;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out; }
+  .scroll-top-button:hover {
+    background-color: #FFF;
+    border-color: #e8c31c;
+    color: #e8c31c; }
+
+.navbar {
+  background: none !important;
+  border-radius: 0; }
+  @media (max-width: 991px) {
+    .navbar {
+      background-color: #f8f9fa !important; } }
+  .navbar.fixed-background {
+    background-color: #212121 !important; }
+  .navbar .navbar-brand img {
+    width: 200px; }
+  @media (max-width: 991px) {
+    .navbar .navbar-nav {
+      padding-right: 0; } }
+  .navbar .navbar-nav .nav-item {
+    padding: 15px 22px; }
+    .navbar .navbar-nav .nav-item.nav-item.active > a {
+      color: #e8c31c !important;
+      border-bottom: 3px solid #e8c31c !important; }
+    .navbar .navbar-nav .nav-item a {
+      color: #FFF;
+      padding: 0 !important;
+      border-bottom: 3px solid transparent;
+      font-size: 18px !important;
+      padding-bottom: 10px !important; }
+      @media (max-width: 991px) {
+        .navbar .navbar-nav .nav-item a {
+          color: #000 !important; } }
+      .navbar .navbar-nav .nav-item a:hover {
+        color: #e8c31c !important;
+        border-bottom: 3px solid #e8c31c !important; }
+  .navbar .navbar-nav .dropdown-toggle:after {
+    margin: 0 0.55rem 0 0; }
+  .navbar .navbar-nav .show > .nav-link {
+    color: #e8c31c; }
+  .navbar .navbar-nav .dropdown-menu {
+    text-align: right !important;
+    border: 2px solid #e8c31c;
+    min-width: 160px; }
+    .navbar .navbar-nav .dropdown-menu:after {
+      content: "";
+      display: block;
+      border-left: 15px solid transparent;
+      border-right: 15px solid transparent;
+      border-bottom: 15px solid #e8c31c;
+      position: absolute;
+      top: -17px;
+      left: calc(50% - 15px); }
+      @media (max-width: 991px) {
+        .navbar .navbar-nav .dropdown-menu:after {
+          display: none; } }
+    @media (min-width: 992px) {
+      .navbar .navbar-nav .dropdown-menu {
+        top: 110%;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+                transform: translateX(-50%); } }
+    .navbar .navbar-nav .dropdown-menu a {
+      color: #e8c31c;
+      color: #272727;
+      font-size: 15px !important;
+      padding: 5px 10px !important; }
+      .navbar .navbar-nav .dropdown-menu a:hover {
+        border: none;
+        background-color: #e8c31c;
+        color: #FFF !important;
+        padding-right: 20px !important; }
+
+.header {
+  height: 100vh;
+  position: relative; }
+  .header .carousel .carousel-item {
+    height: 100vh; }
+    @media (max-width: 991px) {
+      .header .carousel .carousel-item img {
+        height: 100%;
+        width: auto !important; } }
+  .header .header-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: url(../images/overlay.svg) no-repeat center center;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.7); }
+    .header .header-overlay .about-eventrah {
+      -webkit-box-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+              justify-content: center;
+      height: 100%;
+      margin: auto;
+      width: 1000px; }
+      @media (max-width: 991px) {
+        .header .header-overlay .about-eventrah {
+          width: auto;
+          -webkit-box-pack: initial;
+                  justify-content: initial;
+          -webkit-box-align: initial;
+                  align-items: initial; } }
+      @media (max-width: 991px) {
+        .header .header-overlay .about-eventrah .col-12 {
+          display: -webkit-box;
+          display: flex;
+          -webkit-box-pack: center;
+                  justify-content: center;
+          -webkit-box-align: center;
+                  align-items: center; } }
+      @media (max-width: 767px) {
+        .header .header-overlay .about-eventrah .col-12:first-child {
+          -webkit-box-align: end;
+                  align-items: flex-end; } }
+      @media (max-width: 991px) {
+        .header .header-overlay .about-eventrah .eventrah-brief {
+          width: 100%;
+          text-align: center; } }
+      .header .header-overlay .about-eventrah .eventrah-brief .eventrah-info .cd-headline {
+        font-size: 27px;
+        color: #FFF;
+        margin-top: 20px; }
+        @media (max-width: 991px) {
+          .header .header-overlay .about-eventrah .eventrah-brief .eventrah-info .cd-headline {
+            font-size: 18px; } }
+        .header .header-overlay .about-eventrah .eventrah-brief .eventrah-info .cd-headline span:first-child {
+          margin-bottom: 10px !important;
+          display: block !important; }
+        .header .header-overlay .about-eventrah .eventrah-brief .eventrah-info .cd-headline .cd-words-wrapper {
+          width: auto !important;
+          text-align: center !important; }
+          .header .header-overlay .about-eventrah .eventrah-brief .eventrah-info .cd-headline .cd-words-wrapper b {
+            color: #e8c31c !important; }
+      .header .header-overlay .about-eventrah .eventrah-brief .header-logo {
+        display: -webkit-box;
+        display: flex; }
+        @media (max-width: 991px) {
+          .header .header-overlay .about-eventrah .eventrah-brief .header-logo {
+            width: -webkit-max-content;
+            width: -moz-max-content;
+            width: max-content;
+            margin: auto; } }
+        .header .header-overlay .about-eventrah .eventrah-brief .header-logo .img-header img {
+          max-width: 90px; }
+          @media (max-width: 991px) {
+            .header .header-overlay .about-eventrah .eventrah-brief .header-logo .img-header img {
+              max-width: 60px; } }
+        .header .header-overlay .about-eventrah .eventrah-brief .header-logo .about-eventrah-title {
+          display: -webkit-box;
+          display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+                  flex-direction: column;
+          padding-right: 20px;
+          margin-top: -5px; }
+          .header .header-overlay .about-eventrah .eventrah-brief .header-logo .about-eventrah-title span {
+            color: #FFF;
+            font-size: 30px;
+            font-weight: bold; }
+            @media (max-width: 991px) {
+              .header .header-overlay .about-eventrah .eventrah-brief .header-logo .about-eventrah-title span {
+                font-size: 22px; } }
+    .header .header-overlay .enventrah-video .video-modal {
+      width: 130px;
+      height: 130px;
+      background-color: rgba(255, 255, 255, 0.5);
+      border-radius: 50%;
+      display: -webkit-box;
+      display: flex;
+      -webkit-box-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+              justify-content: center;
+      margin: auto !important;
+      box-shadow: 2px 7px 6px #2d2d2d; }
+      @media (max-width: 991px) {
+        .header .header-overlay .enventrah-video .video-modal {
+          width: 100px;
+          height: 100px; } }
+      .header .header-overlay .enventrah-video .video-modal:hover {
+        -webkit-transform: scale(0.9);
+                transform: scale(0.9); }
+        .header .header-overlay .enventrah-video .video-modal:hover > button {
+          -webkit-transform: scale(1.1);
+                  transform: scale(1.1); }
+      .header .header-overlay .enventrah-video .video-modal button {
+        background: #FFF;
+        color: #000;
+        border: none;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        -webkit-transition: all 0.4s ease-in-out;
+        transition: all 0.4s ease-in-out; }
+        @media (max-width: 991px) {
+          .header .header-overlay .enventrah-video .video-modal button {
+            width: 70px;
+            height: 70px;
+            font-size: 13px !important; } }
+        .header .header-overlay .enventrah-video .video-modal button:focus {
+          box-shadow: none !important; }
+    .header .header-overlay .enventrah-video .modal .modal-dialog {
+      max-width: 1000px !important; }
+      .header .header-overlay .enventrah-video .modal .modal-dialog .modal-body {
+        padding: .5rem !important; }
+        .header .header-overlay .enventrah-video .modal .modal-dialog .modal-body iframe {
+          width: 100%;
+          height: 540px; }
+          @media (max-width: 991px) {
+            .header .header-overlay .enventrah-video .modal .modal-dialog .modal-body iframe {
+              height: 300px; } }
+
+.next-event {
+  background-color: #212121;
+  padding: 50px 0;
+  color: #FFF; }
+  @media (max-width: 991px) {
+    .next-event {
+      padding: 35px 0; } }
+  @media (max-width: 991px) {
+    .next-event .event-info {
+      margin-bottom: 35px; } }
+  .next-event .event-info h1 {
+    font-weight: bold;
+    margin-bottom: 25px; }
+    @media (max-width: 991px) {
+      .next-event .event-info h1 {
+        font-size: 2rem; } }
+  .next-event .event-info span.start-at {
+    background-color: #e8c31c;
+    padding: 0 15px;
+    margin-right: 15px;
+    color: #000; }
+  .next-event #timer > div {
+    display: inline-block !important;
+    width: 24%;
+    text-align: center;
+    font-size: 4rem;
+    font-weight: bold; }
+    @media (max-width: 991px) {
+      .next-event #timer > div {
+        font-size: 2.5rem; } }
+    .next-event #timer > div > span {
+      display: block;
+      font-size: 1rem !important; }
+
+.services {
+  padding: 70px 0; }
+  @media (max-width: 991px) {
+    .services {
+      padding: 40px 0; } }
+  .services .circle {
+    font-weight: bold;
+    padding: 15px 20px;
+    border-radius: 50%;
+    background-color: #e8c31c;
+    color: #4D4545;
+    max-height: 50px;
+    z-index: 2;
+    font-size: 22px;
+    line-height: 22px; }
+  .services .how-it-works.row {
+    display: -webkit-box;
+    display: flex; }
+    .services .how-it-works.row .col-2 {
+      display: -webkit-inline-box;
+      display: inline-flex;
+      align-self: stretch;
+      -webkit-box-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+              justify-content: center; }
+    .services .how-it-works.row .col-2::after {
+      content: "";
+      position: absolute;
+      border-left: 3px solid #e8c31c;
+      z-index: 1; }
+    .services .how-it-works.row .col-2.bottom::after {
+      height: 50%;
+      left: 50%;
+      top: 50%; }
+    .services .how-it-works.row .col-2.full::after {
+      height: 100%;
+      left: calc(50% - 3px); }
+    .services .how-it-works.row .col-2.top::after {
+      height: 50%;
+      left: 50%;
+      top: 0; }
+    .services .how-it-works.row h5 {
+      background-repeat: no-repeat;
+      background-position: right;
+      background-size: 40px;
+      padding: 10px 50px 10px 0;
+      margin-bottom: 15px;
+      margin-right: -50px; }
+      .services .how-it-works.row h5.login {
+        background-image: url(../images/login.png); }
+      .services .how-it-works.row h5.id-card {
+        background-image: url(../images/services.png); }
+      .services .how-it-works.row h5.certificate {
+        background-image: url(../images/certificate.png); }
+      @media (max-width: 991px) {
+        .services .how-it-works.row h5 {
+          margin-right: -35px; } }
+    .services .how-it-works.row .service-sub-item a {
+      text-decoration: none;
+      color: #555;
+      padding: 5px 0px;
+      display: block;
+      position: relative; }
+      .services .how-it-works.row .service-sub-item a:after {
+        content: "";
+        width: 10px;
+        height: 10px;
+        position: absolute;
+        top: 14px;
+        right: -16px;
+        background-color: #e8c31c;
+        border-radius: 50%; }
+    .services .how-it-works.row:first-of-type h5 {
+      background-image: url(../images/login.png); }
+    .services .how-it-works.row:nth-of-type(2) h5 {
+      background-image: url(../images/services.png); }
+  .services .timeline div {
+    padding: 0;
+    height: 40px; }
+  .services .timeline hr {
+    border-top: 3px solid #e8c31c;
+    margin: 0;
+    top: 17px;
+    position: relative; }
+  .services .timeline .col-2 {
+    display: -webkit-box;
+    display: flex;
+    overflow: hidden; }
+  .services .timeline .corner {
+    border: 3px solid #e8c31c;
+    width: 100%;
+    position: relative;
+    border-radius: 15px; }
+  .services .timeline .top-right {
+    left: 48.5%;
+    top: -50%; }
+    @media (max-width: 991px) {
+      .services .timeline .top-right {
+        left: 45%; } }
+  .services .timeline .left-bottom {
+    left: -48.5%;
+    top: calc(50% - 3px); }
+    @media (max-width: 991px) {
+      .services .timeline .left-bottom {
+        left: -45%; } }
+  .services .timeline .top-left {
+    left: -48.5%;
+    top: -50%; }
+    @media (max-width: 991px) {
+      .services .timeline .top-left {
+        left: -45%; } }
+  .services .timeline .right-bottom {
+    left: 48.5%;
+    top: calc(50% - 3px); }
+    @media (max-width: 991px) {
+      .services .timeline .right-bottom {
+        left: 45%; } }
+
+footer {
+  background-color: #000;
+  padding: 50px 0 0;
+  color: #FFF;
+  margin-top: 150px; }
+  footer .footer-item h2 {
+    font-weight: 600;
+    margin-bottom: 20px; }
+  footer .contact-us li {
+    margin-bottom: 20px; }
+    footer .contact-us li:last-child {
+      margin-bottom: 0; }
+    footer .contact-us li svg {
+      margin-right: 10px; }
+    footer .contact-us li a {
+      color: #FFF; }
+  footer .contact-us .social-media-footer a {
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+    text-align: center;
+    line-height: 35px;
+    margin-right: 20px;
+    background-color: #e8c31c;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out; }
+    footer .contact-us .social-media-footer a:hover {
+      background-color: #FFF;
+      color: #e8c31c; }
+    footer .contact-us .social-media-footer a svg {
+      margin: 0; }
+  footer .twitter-feed p svg {
+    margin-right: 10px; }
+  footer .twitter-feed p.time {
+    color: #777; }
+  footer .news-letter form input[type="email"] {
+    width: 250px;
+    height: 38px;
+    background-color: #333;
+    border: none;
+    color: #FFF;
+    padding: 10px 20px; }
+  footer .news-letter form input[type="submit"] {
+    background-color: #e8c31c;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    border-radius: 0;
+    color: #FFF;
+    border-color: transparent;
+    margin-top: -3px; }
+    footer .news-letter form input[type="submit"]:hover {
+      background-color: #000;
+      border-color: #e8c31c; }
+  footer .copyright {
+    padding: 25px 0 !important;
+    background-color: #0a0a0a;
+    margin-top: 50px; }
+    footer .copyright p {
+      margin: 0; }
+
+/* =====[Start: Global rules]===== */
+body {
+  overflow-x: hidden;
+  direction: rtl;
+  text-align: right; }
+  @media (max-width: 991px) {
+    body {
+      overflow-x: hidden; } }
+
+*, h1, h2, h3, h4, h5, h6 {
+  font-family: 'Cairo', sans-serif; }
+
+a {
+  text-decoration: none !important; }
+
+/* =====[End: Global rules]===== */

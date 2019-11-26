@@ -1,0 +1,48 @@
+.next-event {
+    background-color: #212121;
+    padding: 50px 0;
+    color: $lightColor;
+    @media #{$maxSmall} {
+        padding: 35px 0;
+    }
+    .event-info {
+        @media #{$maxSmall} {
+            margin-bottom: 35px;
+        }
+        h1 {
+            font: {
+                weight: bold
+            }
+            margin-bottom: 25px;
+            @media #{$maxSmall} {
+                font-size: 2rem;
+            }
+        }
+        span.start-at {
+            background-color: $mainColor;
+            padding: 0 15px;
+            margin-right: 15px;
+            color: $darkColor
+        }
+    }
+    #timer {
+        > div {
+            display: inline-block !important;
+            width: 24%;
+            text-align: center;
+            font: {
+                size: 4rem;
+                weight: bold
+            }
+            @media #{$maxSmall} {
+                font-size: 2.5rem;
+            }
+            > span {
+                display: block;
+                font: {
+                    size: 1rem !important;
+                }
+            }
+        }
+    }
+}

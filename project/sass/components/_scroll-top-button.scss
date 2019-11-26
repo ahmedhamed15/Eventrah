@@ -1,0 +1,20 @@
+.scroll-top-button {
+    position: fixed;
+    bottom: 20px;
+    right: -200px;
+    z-index: 888;
+    text-align: center;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    color: $lightColor;
+    background-color: $mainColor;
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+        background-color: $lightColor;
+        border-color: $mainColor;
+        color: $mainColor;
+    }
+}

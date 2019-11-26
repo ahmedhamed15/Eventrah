@@ -1,0 +1,29 @@
+@import "helpers/variables";
+@import "helpers/classes";
+@import "helpers/mixins";
+@import "components/buttons";
+@import "components/animations";
+@import "components/scroll-top-button";
+@import "layouts/navbar";
+@import "sections/header";
+@import "sections/next_event";
+@import "sections/services";
+@import "layouts/footer";
+
+
+/* =====[Start: Global rules]===== */
+body {
+    overflow-x: hidden;
+    direction: rtl;
+    text-align: right;
+    @media #{$maxSmall} {
+        overflow-x: hidden;
+    }
+}
+*, h1, h2, h3, h4, h5, h6 {
+    font-family: 'Cairo', sans-serif;
+}
+a {
+    text-decoration: none !important;
+}
+/* =====[End: Global rules]===== */

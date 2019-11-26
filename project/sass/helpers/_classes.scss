@@ -1,0 +1,30 @@
+.my-transition {
+    transition: all 0.3s ease-in-out;
+}
+.main-title {
+    position: relative;
+    font-weight: 600;
+    margin-bottom: 50px;
+    @media #{$maxSmall} {
+        margin-bottom: 35px;
+      }
+    &:after,
+    &:before {
+        content: "";
+        position: absolute;
+    }
+    &:after {
+        bottom: 0;
+        right: 0;
+        height: 3px;
+        width: 50px;
+        background-color: $mainColor;
+    }
+    &:before {
+        bottom: -3px;
+        right: 0;
+        height: 3px;
+        width: 30px;
+        background-color: #be9b00;
+    }
+}

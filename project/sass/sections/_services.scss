@@ -1,0 +1,146 @@
+.services {
+  padding: 70px 0;
+  @media #{$maxSmall} {
+    padding: 40px 0;
+  }
+  .circle {
+    font-weight: bold;
+    padding: 15px 20px;
+    border-radius: 50%;
+    background-color: $mainColor;
+    color: #4D4545;
+    max-height: 50px;
+    z-index: 2;
+    font-size: 22px;
+    line-height: 22px;
+  }
+  
+  .how-it-works.row {
+    display: flex;
+    .col-2 {
+      display: inline-flex;
+      align-self: stretch;
+      align-items: center;
+      justify-content: center;
+    }
+    .col-2::after {
+      content: "";
+      position: absolute;
+      border-left: 3px solid $mainColor;
+      z-index: 1;
+    }
+    .col-2.bottom::after {
+      height: 50%;
+      left: 50%;
+      top: 50%;
+    }
+    .col-2.full::after {
+      height: 100%;
+      left: calc(50% - 3px);
+    }
+    .col-2.top::after {
+      height: 50%;
+      left: 50%;
+      top: 0;
+    }
+    h5 {
+      background-repeat: no-repeat;
+      background-position: right;
+      background-size: 40px;
+      padding: 10px 50px 10px 0;
+      margin-bottom: 15px;
+      margin-right: -50px;
+      &.login {
+        background-image: url(../images/login.png);
+      }
+      &.id-card {
+        background-image: url(../images/services.png);
+      }
+      &.certificate {
+        background-image: url(../images/certificate.png);
+      }
+      @media #{$maxSmall} {
+        margin-right: -35px;
+      }
+    }
+    .service-sub-item {
+      a {
+        text-decoration: none;
+        color: #555;
+        padding: 5px 0px;
+        display: block;
+        position: relative;
+        &:after {
+          content: "";
+          width: 10px;
+          height: 10px;
+          position: absolute;
+          top: 14px;
+          right: -16px;
+          background-color: #e8c31c;
+          border-radius: 50%;
+        }
+      }
+    }
+    &:first-of-type {
+      h5 {
+        background-image: url(../images/login.png);
+      }
+    }
+    &:nth-of-type(2) {
+      h5 {
+        background-image: url(../images/services.png);
+      }
+    }
+  }
+  .timeline {
+    div {
+      padding: 0;
+      height: 40px;
+    }
+    hr {
+      border-top: 3px solid $mainColor;
+      margin: 0;
+      top: 17px;
+      position: relative;
+    }
+    .col-2 {
+      display: flex;
+      overflow: hidden;
+    }
+    .corner {
+      border: 3px solid $mainColor;
+      width: 100%;
+      position: relative;
+      border-radius: 15px;
+    }
+    .top-right {
+      left: 48.5%;
+      top: -50%;
+      @media #{$maxSmall} {
+        left: 45%;
+      }
+    }
+    .left-bottom {
+      left: -48.5%;
+      top: calc(50% - 3px);
+      @media #{$maxSmall} {
+        left: -45%;
+      }
+    }
+    .top-left {
+      left: -48.5%;
+      top: -50%;
+      @media #{$maxSmall} {
+        left: -45%;
+      }
+    }
+    .right-bottom {
+      left: 48.5%;
+      top: calc(50% - 3px);
+      @media #{$maxSmall} {
+        left: 45%;
+      }
+    } 
+  }
+}
