@@ -5,7 +5,12 @@ $(function() {
 
     // Add active class on navbar link
     navbarLink.on('click', function() {
-        $(this).parent('.nav-item').addClass('active').siblings().removeClass('active');
+      var $this = $(this);
+        $this.parent('.nav-item').addClass('active').siblings().removeClass('active');
+        $('body, html').animate({
+          scrollTop: $($this.data('navigate')).offset().top - $this.parents('.navbar.fixed-top').innerHeight()
+        }, 1000);
+        return false;
     });
 
     // Show scroll top button
@@ -15,6 +20,12 @@ $(function() {
         } else {
             $('.scroll-top-button').css('right', '-200px');
         }
+       /* navbarLink.each(function () {
+            var $this = $(this);
+            if ($($this.data('navigate')).offset().top <= ($(window).scrollTop() + $('.navbar.fixed-top').innerHeight() + 20)) {
+              $this.parents('li').addClass('active').siblings().removeClass('active');
+            }
+        });*/
     });
 
     // Make scrollTop zero when click on the scrollTop button
@@ -73,7 +84,8 @@ $(function() {
         time: 1000
     });
 
-      $('.gallary .gallary-item').each(function() {
+    // Trigger magnificPopup plugin
+    $('.gallary .gallary-item').each(function() {
 	    $(this).magnificPopup({
 	        delegate: 'a', 
 	        type: 'image',
@@ -82,12 +94,16 @@ $(function() {
 	        },
 	    });
     });
+
+    //Trigger slick slider
     $('.client-slider').slick({
         dots: false,
+        arrows: false,
         infinite: true,
         speed: 300,
         slidesToShow: 4,
         slidesToScroll: 4,
+        autoplay: true,
         responsive: [
           {
             breakpoint: 1024,
@@ -119,5 +135,3 @@ $(function() {
       });
 
 });
-
-

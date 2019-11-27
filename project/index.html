@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Enventrah</title>
 
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/png" href="images/small-logo.png"/>
+
     <!-- Bootstrap images -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
 
@@ -42,6 +45,8 @@
     </div>
     <!-- End: ScrollTop button -->
 
+    <!-- particles.js container --> 
+    <div id="particles-js"></div>
 
 
     <!-- Start: Navbar -->
@@ -58,7 +63,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#"> عن ايفنترا <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="#" data-navigate=".header"> عن ايفنترا <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -66,19 +71,19 @@
                             خدماتنا
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">التسجيل</a>
-                            <a class="dropdown-item" href="#">البطاقة التعريفية</a>
-                            <a class="dropdown-item" href="#">الشهادات</a>
+                            <a class="dropdown-item" href="#" data-navigate=".nav-login">التسجيل</a>
+                            <a class="dropdown-item" href="#" data-navigate=".nav-id-card">البطاقة التعريفية</a>
+                            <a class="dropdown-item" href="#" data-navigate=".nav-certificate">الشهادات</a>
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#"> أرقامنا </a>
+                        <a class="nav-link" href="#" data-navigate=".our-numbers"> أرقامنا </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#"> معرض الصور </a>
+                        <a class="nav-link" href="#" data-navigate=".gallary"> معرض الصور </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#"> عملائنا </a>
+                        <a class="nav-link" href="#" data-navigate=".our-clients"> عملائنا </a>
                     </li>
                 </ul>
                 <ul class="navbar-nav mr-auto">
@@ -104,19 +109,19 @@
         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="images/header1.jpg" class="d-block w-100" alt="...">
+                    <img src="images/header1.jpg" class="d-block" alt="...">
                 </div>
                 <div class="carousel-item">
-                    <img src="images/header2.jpg" class="d-block w-100" alt="...">
+                    <img src="images/header2.jpg" class="d-block" alt="...">
                 </div>
                 <div class="carousel-item">
-                    <img src="images/header3.jpg" class="d-block w-100" alt="...">
+                    <img src="images/header3.jpg" class="d-block" alt="...">
                 </div>
                 <div class="carousel-item">
-                    <img src="images/header4.jpg" class="d-block w-100" alt="...">
+                    <img src="images/header4.jpg" class="d-block" alt="...">
                 </div>
                 <div class="carousel-item">
-                    <img src="images/header5.jpg" class="d-block w-100" alt="...">
+                    <img src="images/header5.jpg" class="d-block" alt="...">
                 </div>
             </div>
         </div>
@@ -162,9 +167,7 @@
                             <div class="modal-dialog" role="document">
                                 <div class="modal-content">
                                     <div class="modal-body">
-                                        <iframe src="https://www.youtube.com/embed/3wi65UW_nJk" frameborder="0"
-                                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                            allowfullscreen></iframe>
+                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/1l5DP2Dp5Y8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                     </div>
                                 </div>
                             </div>
@@ -209,7 +212,7 @@
         <div class="container">
             <h2 class="pb-3 pt-2 main-title"> خدماتنا </h2>
             <!--first section-->
-            <div class="row align-items-center how-it-works">
+            <div class="row align-items-center how-it-works nav-login">
                 <div class="col-2 text-center bottom">
                     <div class="circle">1</div>
                 </div>
@@ -260,7 +263,7 @@
                 </div>
             </div>
             <!--second section-->
-            <div class="row align-items-center justify-content-end how-it-works">
+            <div class="row align-items-center justify-content-end how-it-works nav-id-card">
                 <div class="col-8 col-md-7 text-right">
                     <h5 class="id-card">
                         <b>البطاقة التعريفية </b>
@@ -301,7 +304,7 @@
                 </div>
             </div>
             <!--third section-->
-            <div class="row align-items-center how-it-works">
+            <div class="row align-items-center how-it-works nav-certificate">
                 <div class="col-2 text-center top">
                     <div class="circle">3</div>
                 </div>
@@ -376,56 +379,58 @@
             <h2 class="pb-3 pt-2 main-title"> معرض الصور </h2>
             <div class="row">
                 <div class="col-md-4">
-                    <div class="full w-100" style="background: url(images/g-5.jpg) 0 0 no-repeat;">
+                    <div class="full w-100" style="background: url(images/header1.jpg) 0 0 no-repeat;">
                         <div class="overlay-effect h-100 w-100">
                             <div class="gallary-item">
-                                <a href="images/g-1.jpg"></a>
-                                <a href="images/g-2.jpg"></a>
-                                <a href="images/g-3.jpg"></a>
+                                <a href="images/g1.jpg"></a>
+                                <a href="images/g2.jpg"></a>
+                                <a href="images/g3.jpg"></a>
+                                <a href="images/g4.jpg"></a>
+                                <a href="images/g5.jpg"></a>
                             </div>
                         </div>
                         <div>
-                            <h3><a href="#">ألوان السعودية <br> 65 صورة </a></h3>
+                            <h3><a href="#">ألوان السعودية <br> 5 صور </a></h3>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="half" style="background: url(images/g-4.jpg) 0 0 no-repeat;">
+                    <div class="half" style="background: url(images/g6.jpg) 0 0 no-repeat;">
                         <div class="overlay-effect h-100 w-100">
                             <div class="gallary-item">
-                                <a href="images/g-1.jpg"></a>
-                                <a href="images/g-2.jpg"></a>
-                                <a href="images/g-3.jpg"></a>
+                                <a href="images/g7.jpg"></a>
+                                <a href="images/g6.jpg"></a>
                             </div>
                         </div>
                         <div>
-                            <h3><a href="#">ألوان السعودية <br> 65 صورة </a></h3>
+                            <h3><a href="#">ألوان السعودية <br> صورتان </a></h3>
                         </div>
                     </div>
-                    <div class="half2" style="background: url(images/g-6.jpg) 0 0 no-repeat;">
+                    <div class="half2" style="background: url(images/header3.jpg) 0 0 no-repeat;">
                         <div class="overlay-effect h-100 w-100">
                             <div class="gallary-item">
-                                <a href="images/g-1.jpg"></a>
-                                <a href="images/g-2.jpg"></a>
-                                <a href="images/g-3.jpg"></a>
+                                <a href="images/g8.jpg"></a>
+                                <a href="images/g9.jpg"></a>
+                                <a href="images/g10.jpg"></a>
                             </div>
                         </div>
                         <div>
-                            <h3><a href="#">ألوان السعودية <br> 65 صورة </a></h3>
+                            <h3><a href="#">ألوان السعودية <br> 3 صور </a></h3>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="full w-100" style="background: url(images/g-5.jpg) 0 0 no-repeat;">
+                    <div class="full w-100" style="background: url(images/header5.jpg) 0 0 no-repeat;">
                         <div class="overlay-effect h-100 w-100">
                             <div class="gallary-item">
-                                <a href="images/g-1.jpg"></a>
-                                <a href="images/g-2.jpg"></a>
-                                <a href="images/g-3.jpg"></a>
+                                <a href="images/g11.jpg"></a>
+                                <a href="images/g12.jpg"></a>
+                                <a href="images/g13.jpg"></a>
+                                <a href="images/g14.jpg"></a>
                             </div>
                         </div>
                         <div>
-                            <h3><a href="#">ألوان السعودية <br> 65 صورة </a></h3>
+                            <h3><a href="#">ألوان السعودية <br> 4 صور </a></h3>
                         </div>
                     </div>
                 </div>
@@ -437,9 +442,9 @@
 
 
     <!-- Start: Our clients -->
-    <!-- <div class="our-clients" style="direction: ltr !important;">
+    <div class="our-clients" style="direction: ltr !important;">
         <div class="container">
-            <h2 class="pb-3 pt-2 main-title"> عملاء يثققون بنا </h2>
+            <h2 class="pb-3 pt-2 main-title"> عملاء يثقون بنا </h2>
             <div class="client-slider">
                 <div class="slider-item">
                     <a href="#">
@@ -459,11 +464,6 @@
                 <div class="slider-item">
                     <a href="#">
                         <img src="images/linkedin.png" alt="">
-                    </a>
-                </div>
-                <div class="slider-item">
-                    <a href="#">
-                        <img src="images/instagram.png" alt="">
                     </a>
                 </div>
                 <div class="slider-item">
@@ -503,21 +503,26 @@
                 </div>
             </div>
         </div>
-    </div> -->
+    </div>
     <!-- End: Our clients -->
 
 
 
+    <!-- Start: Google map -->
+    <div class="google-map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1816402.8300002413!2d31.611473556072802!3d31.345499786978767!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sar!2seg!4v1574844399640!5m2!1sar!2seg" width="1366" height="600" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+    </div>
+    <!-- End: Google map -->
 
 
 
-    <!-- Start: Footer
+    <!-- Start: Footer -->
     <footer class="footer">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-md-4">
                     <div class="footer-item contact-us">
-                        <h2 class="h2"> Contact us </h2>
+                        <h2 class="h2"> اتصل بنا </h2>
                         <ul class="list-unstyled">
                             <li class="phone">
                                 <i class="fas fa-phone"></i>
@@ -529,7 +534,7 @@
                             </li>
                             <li class="address">
                                 <i class="fas fa-map-marker-alt"></i>
-                                <a href="#"> Gamasa - Mansoura - Egypt</a>
+                                <a href="#"> الرياض - السعودية</a>
                             </li>
                             <li class="social-media-footer">
                                 <a href="#">
@@ -546,36 +551,33 @@
                     </div>
                 </div>
                 <div class="col-12 col-md-4">
-                    <div class="footer-item twitter-feed">
-                        <h2 class="h2"> Twitter Feed </h2>
+                    <div class="footer-item about-us-footer">
+                        <h2 class="h2"> نبذة عنا </h2>
                         <p>
-                            <i class="fab fa-twitter"></i>
-                            Niva #Agency WordPress Theme is now only $34 (for a limited time only) - Download Theme Now!
-                            https://t.co/pm8EJQxYhQ
+                            هي منصة متكاملة يمكنك من خلالها إدارة الفعاليات والمعارض والمؤتمرات المقامة بمدينتك كما يمكنك اعداد وتصميم موقعك الخاص بكل يسر وسهوله.
                         </p>
-                        <p class="time"> 161 days ago </p>
-                        <a href="#"> Follow @SweetThemes1 </a>
+                        <p class="offer-service"> <a href="#" class="btn btn-light"> طلب خدمة </a> </p>
                     </div>
                 </div>
                 <div class="col-12 col-md-4">
                     <div class="footer-item news-letter">
-                        <h2 class="h2"> Newsletter </h2>
+                        <h2 class="h2"> آخر الأخبار </h2>
                         <p>
-                            Sing up to our Newsletter for the latest news and updates fresh for Niva !
+                            اشترك معنا عبر البريد الالكتروني حتي تصلك جميع فاعلياتنا القادمة والأحداث التي نعمل عليها.
                         </p>
                         <form action="">
-                            <input type="email" placeholder="Type your email">
-                            <input type="submit" class="btn btn-light">
+                            <input type="email" placeholder="أدخل بريدك الالكتروني">
+                            <input type="submit" class="btn btn-light" value="اشتراك">
                         </form>
                     </div>
                 </div>
             </div>
         </div>
         <div class="copyright text-center">
-            <p> Tartibat , 2019 All Rights Reserved. </p>
+            <p> جميع الحقوق محفوظة 2019 - ايفنترا </p>
         </div>
     </footer>
-    Start: Footer -->
+    <!-- Start: Footer -->
 
 
     <!-- JavaScript files -->
@@ -588,6 +590,8 @@
     <script src="js/modernizr.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <script src="js/particles.min.js"></script>
+    <script src="js/particles-script.js"></script> 
     <script src="js/jquery.counterup.min.js"></script>
     <script src="js/jquery.magnific-popup.min.js"></script>
     <script src="js/slick.min.js"></script>

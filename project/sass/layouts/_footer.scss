@@ -1,13 +1,15 @@
 footer {
-    background-color: $darkColor;
+    background-color: #212121;
     padding: 50px 0 0;
     color: $lightColor;
-    margin-top: 150px;
     .footer-item {
         h2 {
             font-weight: 600;
             margin-bottom: 20px;
         }
+    }
+    .list-unstyled {
+        padding: 0;
     }
     .contact-us {
         li {
@@ -16,7 +18,7 @@ footer {
                 margin-bottom: 0;
             }
             svg {
-                margin-right: 10px;
+                margin-left: 10px;
             }
             a {
                 color: $lightColor;
@@ -29,7 +31,7 @@ footer {
                 display: inline-block;
                 text-align: center;
                 line-height: 35px;
-                margin-right: 20px;
+                margin-left: 20px;
                 background-color: $mainColor;
                 transition: all 0.3s ease-in-out;
                 &:hover {
@@ -42,7 +44,7 @@ footer {
             }
         }
     }
-    .twitter-feed {
+    .about-us-footer {
         p {
             svg {
                 margin-right: 10px;
@@ -50,6 +52,11 @@ footer {
             &.time {
                 color: #777;
             }
+        }
+        .offer-service {
+           a {
+                @extend .main-button;
+           }
         }
     }
     .news-letter {
@@ -70,18 +77,26 @@ footer {
                 border-color: transparent;
                 margin-top: -3px;
                 &:hover {
-                    background-color: $darkColor;
+                    background-color: #212121;
                     border-color: $mainColor;
                 }
             }
         }
     }
+    .col-12 {
+        @media #{$maxSmall} {
+            margin-bottom: 40px;
+        }
+    }
     .copyright {
         padding: 25px 0 !important;
-        background-color: #0a0a0a;
+        background-color: #252525;
         margin-top: 50px;
+        @media #{$maxSmall} {
+            margin-top: 0
+        }
         p {
-            margin: 0;
+            margin: 0
         }
     }
 }
