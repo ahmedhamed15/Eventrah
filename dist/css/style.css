@@ -130,10 +130,12 @@
   position: relative; }
   .header .carousel .carousel-item {
     height: 100vh; }
-    @media (max-width: 991px) {
-      .header .carousel .carousel-item img {
-        height: 100%;
-        width: auto !important; } }
+    .header .carousel .carousel-item img {
+      height: 100vh; }
+      @media (max-width: 991px) {
+        .header .carousel .carousel-item img {
+          height: 100%;
+          width: auto !important; } }
   .header .header-overlay {
     position: absolute;
     top: 0;

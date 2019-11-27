@@ -5,6 +5,7 @@
         .carousel-item {
             height: 100vh;
             img {
+                height: 100vh;
                 @media #{$maxSmall} {
                     height: 100%;
                     width: auto !important;
